@@ -25,7 +25,7 @@ const int I2C_DISPLAY_ADDRESS = 0x3c;
 const int SDA_PIN = D2;
 const int SDC_PIN = D1;
 
-String OPEN_WEATHER_MAP_APP_ID = "b387f51e714a7e81a19e997c5f29491e";
+String OPEN_WEATHER_MAP_APP_ID = "OPEN_WEATHER_API_KEY";
 float  OPEN_WEATHER_MAP_LOCATION_LAT = -8.0955;
 float  OPEN_WEATHER_MAP_LOCATION_LON = 112.1608;
 String OPEN_WEATHER_MAP_LANGUAGE = "id";
@@ -301,3 +301,4 @@ void drawHeaderOverlay(OLEDDisplay *display, OLEDDisplayUiState* state) {
 void setReadyForWeatherUpdate() {
   readyForWeatherUpdate = true;
 }
+
