@@ -251,7 +251,7 @@ void drawCurrentWeather(OLEDDisplay *display, OLEDDisplayUiState* state, int16_t
 
   display->setFont(ArialMT_Plain_24);
   display->setTextAlignment(TEXT_ALIGN_LEFT);
-  String temp = String(currentWeather.temp, 1) + (IS_METRIC ? "°C");
+  String temp = String(currentWeather.temp, 1) + (IS_METRIC ? "°C" : "°F");
   display->drawString(60 + x, 5 + y, temp);
 
   display->setFont(Meteocons_Plain_36);
@@ -301,4 +301,5 @@ void drawHeaderOverlay(OLEDDisplay *display, OLEDDisplayUiState* state) {
 void setReadyForWeatherUpdate() {
   readyForWeatherUpdate = true;
 }
+
 
